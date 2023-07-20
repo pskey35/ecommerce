@@ -2,8 +2,8 @@
 import "./menu.css";
 import { useState } from "react";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
-import image from "./assets/img/user.webp";
-import steam from "./assets/img/steam.png";
+import image from "../public/assets/img/user.webp";
+import steam from "../public/assets/img/steam.png";
 import { AnimatePresence, motion } from "framer-motion";
 
 function User() {
@@ -192,7 +192,7 @@ export default function App() {
     precio: 34,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food1.png",
+    src: "./assets/img/food3.png",
   });
   const [bolean, setBolean] = useState(false);
   const [car, setCar] = useState([]); //array de listas
@@ -311,7 +311,7 @@ function Card({ data }) {
     precio: 34,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food1.png",
+    src: "./assets/img/food4.png",
     id:1
   }, {
     nombre: "cordero",
