@@ -192,7 +192,7 @@ export default function App() {
     precio: 34,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./assets/img/food3.png",
+    src: "./assets/img/food1.png",
   });
   const [bolean, setBolean] = useState(false);
   const [car, setCar] = useState([]); //array de listas
@@ -311,49 +311,49 @@ function Card({ data }) {
     precio: 34,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./assets/img/food4.png",
+    src: "./assets/img/food1.png",
     id:1
   }, {
     nombre: "cordero",
     precio: 58,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food2.png",
+    src: "./assets/img/food2.png",
     id:2
   }, {
     nombre: "res",
     precio: 11,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food3.png",
+    src: "./assets/img/food3.png",
     id:3
   }, {
     nombre: "pescado",
     precio: 16,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food4.png",
+    src: "./assets/img/food4.png",
     id:4
   }, {
     nombre: "cabrito",
     precio: 14,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food5.png",
+    src: "./assets/img/food5.png",
     id:5
   }, {
     nombre: "papas",
     precio: 24,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food6.png",
+    src: "./assets/img/food6.png",
     id:6
   }, {
     nombre: "alitas",
     precio: 22,
     desc: "lorem ipsum dolor aismet",
     puntuacion: 3.4,
-    src: "./src/assets/img/food7.png",
+    src: "./assets/img/food7.png",
     id:7
   }];
 
