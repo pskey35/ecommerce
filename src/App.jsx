@@ -2,8 +2,8 @@
 import "./menu.css";
 import { useState } from "react";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
-import image from "../public/assets/img/user.webp";
-import steam from "../public/assets/img/steam.png";
+import image from "/assets/img/user.webp";
+import steam from "/assets/img/steam.png";
 import { AnimatePresence, motion } from "framer-motion";
 
 function User() {
