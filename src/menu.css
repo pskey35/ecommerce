@@ -66,6 +66,8 @@ body,
 .bod {
   display: flex;
   justify-content: center;
+  align-items:center;
+  height:calc(100% - 40px);
 }
 
 .bod .container {
@@ -111,7 +113,6 @@ body,
 
 
 .container-right {
-
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -135,6 +136,7 @@ body,
   align-items:center;
   position:relative;
   padding:10px;
+
 }
 
 .right-tercero {
@@ -154,22 +156,22 @@ body,
 .right-boton {
   font-size: 20px;
   border-radius: 10px;
-  border: 1px solid rgb(33, 110, 141);
+  border:1px solid rgb(70, 60, 15);
   padding: 10px 30px;
   width: max-content;
   transition: background-color 300ms;
+  transition:border 300ms;
+
 }
 
-.right-boton:hover {
-  background: rgb(33, 110, 141);
-}
+
 
 .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   overflow:auto;
-
+  max-height:500px;
 }
 
 .card {
@@ -401,14 +403,66 @@ body,
   height:5px;
   border-radius: 10px;
   background:rgb(196, 181, 181);
-  transform:translateX(25%);
+  transform:translateX(25);
 }
 
 .link-carrito{
-  padding:10px;
+  padding:3px;
+  margin-top:7px;
   text-align:end;
   margin-right:20px;
 }
+
+@media screen and (min-width:1850px){
+   .bod .container{
+     flex-direction:column;
+   }
+}
+
+@media screen and (min-width:1600px){
+  .card-container .card{
+      padding: 20px;
+      background: rgb(39, 38, 38);
+      margin: 1.4vw;
+      border-radius: 20px;
+      font-size:1.1vw;
+  }
+
+  .card-primero .image{
+      height: 8vw;
+      transform: translate(-35%, -35%);
+  }
+
+  .card-container{
+    overflow:initial;
+  }
+
+  .container-image{
+    height:calc(350px + 8vw);
+    width:calc(350px + 8vw)
+  }
+
+  .container-image img{
+    width:100%;
+    height:100%;
+  }
+}
+
+@media screen and (min-width:800px){
+  .right-boton:hover{
+    border:1px solid rgb(128, 105, 0);
+  }
+
+  .card-container::-webkit-scrollbar {
+    background: rgb(70, 67, 67);
+  }
+  
+  .card-container::-webkit-scrollbar-thumb {
+    background: rgb(29, 29, 31);
+    border-radius: 100px;
+  }
+}
+
 
 @media screen and (max-width: 800px) {
   .bod {
@@ -424,7 +478,7 @@ body,
   .footer{
     padding:10px;
     height:220px;
-
+    width:100%;
   }
   .card-container{
     position:absolute;
@@ -435,6 +489,7 @@ body,
     max-width:100%;
     flex-wrap:nowrap;
     padding:10px;
+
   }
   .card{
     background:rgb(29, 25, 25);
@@ -455,4 +510,3 @@ body,
     border-radius: 40px 40px 0 0;
   }
 }
-

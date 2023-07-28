@@ -102,8 +102,8 @@ function Carrito(
       >
         <div className="carrito-primero">
           <span className="lineaCarrito"></span>
-          <Link to="/" className="link-carrito">
-            <button onClick={() => setBolean(!bolean)}>retro</button>
+          <Link style={{textDecoration:"none", background:"white"}} to="/" className="link-carrito" onClick={() =>setBolean(!bolean)}>
+            retro
           </Link>
         </div>
         {itemCont > 0
@@ -225,6 +225,18 @@ export default function App() {
     setItemCont(itemCont + 1); //el de aqui cuenta cuantos items hay en el carrito
 
     setCont(cont + 1); //contador de notificacion
+
+    /*aqui cada vez que se da click se pone color verde 
+     y luego de 180ms se pone normal.
+    esto lo usaba con hover pero en los telefonos al no haber hover
+    se pintaba cada vez que se hacia click y si querias agregar al carrito
+    mas de un menu del mismo tipo no se veia diferencia
+    */
+    const boton = document.querySelector(".right-boton")
+    boton.style.background = "rgb(189, 124, 2)";
+    setTimeout(()=>{
+      boton.style.background = "initial"
+    },180)
   };
   const location = useLocation();
   return (
